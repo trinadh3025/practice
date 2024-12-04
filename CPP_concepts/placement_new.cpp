@@ -6,11 +6,14 @@ class Base{
 public:
 	Base(){std::cout << "Constructor:" << std::endl;}
 	~Base(){std::cout << "Destructor:" << std::endl;}
+};
 
 int main(){
 	//Normal case
 	std::cout << "Normal case:" << std::endl;
 	Base *obj = new Base();
+	int *cha;
+	cha = (int*)malloc(10);
 	delete obj;
 
 	//placement new
