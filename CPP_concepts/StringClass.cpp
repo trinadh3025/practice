@@ -78,6 +78,13 @@ public:
 		cout << "String object moved through move copy assignement operator" << endl;
 		return *this;
 	}
+	
+	String operator + (const String& s){
+		
+		strcat(this->source, s.source);
+		String s3(this->source);
+		return s3;
+	}
 	int getLength() const{
 		return length;
 	}
@@ -124,5 +131,8 @@ int main(){
 	cout << str3.getLength() << endl;
 	cout << str3.getString() << endl;
 	cout << str3.isEmpty() << endl;
+
+	String s4 = str2 + str3 + str;
+	cout << s4.getString() << endl;
 	return 0;
 }
