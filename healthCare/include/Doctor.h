@@ -22,5 +22,35 @@ public:
 	void allocateSlot(const std::string &slot);
 	void saveToJSON(const std::string &fileName);
 	void loadFromJSON(const std::string &fileName);
+
+	/*
+	void setId(int id_){
+		this->id = id;
+	}
+
+	int getId(){
+		return this->id;
+	}
+	
+	void setSpeciality(std::string speciality_){
+		this->speciality = speciality_;
+	}
+
+	std::string getSpeciality(){
+		return this->speciality;
+	}
+	
+
+	std::vector<std::string>> getAvailability(){
+		return this->availability;
+	}
+
+	void setAvailability(std::string time){
+		availability.push_back(time);
+	}
+	void setAvailability(std::vector<std::string>> availability_){
+		availability = availability_;
+	}
+	*/
 };
 #endif

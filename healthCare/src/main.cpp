@@ -5,6 +5,10 @@
 #include <iostream>
 
 int main(){
+        
+        std::shared_ptr<EntityFactory> doctorFactory = std::make_shared<DoctorFactory>();	
+        std::shared_ptr<EntityFactory> patientFactory = std::make_shared<PatientFactory>();	
+        std::shared_ptr<EntityFactory> departmentFactory = std::make_shared<DepartmentFactory>();	
 	
 	//Create Doctor personal info
 	auto docInfo = std::make_shared<DoctorPersonalInfo>("Dr.Prasad", "9245333111", "MD - Card");
